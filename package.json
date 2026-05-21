@@ -1,0 +1,14 @@
+{
+  "name": "budgettrip-functions",
+  "version": "1.0.0",
+  "description": "Azure Functions for BudgetTrip",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.7.0",
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
+  }
+}
