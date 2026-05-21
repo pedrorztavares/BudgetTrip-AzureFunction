@@ -17,7 +17,7 @@ const dynamoClient = new DynamoDBClient({
 const dynamo = DynamoDBDocumentClient.from(dynamoClient);
 
 app.timer("expireReceipts", {
-  schedule: "0 0 0 * * *",
+  schedule: "*/30 * * * * *",
 
   handler: async (timer, context) => {
     context.log("Starting receipt expiration function...");
