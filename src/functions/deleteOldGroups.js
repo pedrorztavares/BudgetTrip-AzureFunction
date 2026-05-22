@@ -75,7 +75,7 @@ async function deleteExpensesForTrip(expensesTable, tripId, context) {
 }
 
 app.timer("deleteOldGroups", {
-  schedule: "*/30 * * * * *",
+  schedule: "0 0 2 * * *",
 
   handler: async (timer, context) => {
     context.log("Starting old groups cleanup function...");
